@@ -2,14 +2,22 @@ body {
   margin: 0;
 }
 
-header {
+#header {
   margin: 0 auto;
-  width: 960px;
-  height: 56px;
+  max-width: 960px;
+  height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 16px;
+  list-style: none;
 }
 
 .header-title {
@@ -20,7 +28,7 @@ header {
   font-weight: bold;
 }
 
-ul {
+.bicycle-ul {
   display: flex;
   align-items: center;
   gap: 32px;
@@ -30,15 +38,15 @@ ul {
 
 #main-visual {
   height: 600px;
-  width: 100%;
-  background-image: url(src/mainvisual.jpg);
+  max-width: 100%;
+  background-image: url(img/mainvisual.jpg);
   background-size: cover;
   background-position: center;
 }
 
 section {
   margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
   padding: 4%;
   text-align: center;
 }
@@ -53,7 +61,6 @@ section {
 }
 
 .about-content  {
-  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -64,7 +71,7 @@ section {
   width:100px;
   height:100px;
   border-radius:50%;
-  background-image: url(about.jpg);
+  background-image: url(img/about.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -86,4 +93,56 @@ img {
 footer {
   text-align: center;
   font-size: 12px;
+  padding: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  #header {
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #main-visual {
+    height: 500px;
+    width: 100%;
+    background-image: url(img/mainvisual.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-left-content {
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-image: url(img/about.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .about-right-content {
+    text-align: left;
+    width: 80%;
+    margin: 8px 0 0 8px;
+  }
+
+  .bicycle-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+  }
 }
