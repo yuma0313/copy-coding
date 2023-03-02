@@ -31,7 +31,7 @@ ul {
 #main-visual {
   height: 600px;
   width: 100%;
-  background-image: url(mainvisual.jpg);
+  background-image: url(src/mainvisual.jpg);
   background-size: cover;
   background-position: center;
 }
