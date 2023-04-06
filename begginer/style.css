@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #2b2a27;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+  margin: 0;
+}
+
+.section1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#img {
+  height: 700px;
+  min-width: 50%;
+  background-image: url(../img/bicycle1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.recipi {
+  max-width: 50%;
+  padding: 16px 5% 0 5%;
+  margin-bottom: 48px;
+}
+
+h2 {
+  margin-top: 36px;
+  border-bottom: 1px solid gray;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+dt {
+  width: 70%;
+  border-bottom: 1px dotted gray;
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+
+dd {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+  border-bottom: 1px dotted gray;
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+
+ol {
+  padding-inline-start: 20px;
+}
+
+li {
+  border-bottom: 1px dotted gray;
+  padding-bottom: 5px;
+  margin-top: 5px;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  margin-bottom: 48px;
+  padding: 16px 48px;
+  background: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+footer {
+  width: 30%;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: small;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-inline-start: 0;
+}
+
+.app {
+  list-style: none;
+}
+
+.company {
+  text-align: center;
+}
+
+@media screen and (max-width: 834px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #img {
+    height: 700px;
+    min-width: 50%;
+    background-image: url(img/mainimg.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .recipi {
+    max-width: 100%;
+    padding: 16px 64px 0 64px;
+  }
+}
