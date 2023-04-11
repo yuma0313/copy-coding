@@ -22,23 +22,37 @@
       </div>
       <a href="#" class="contact">お問い合わせ</a>
     </header>
-    <div id="main-visual"></div>
+    <div id="main-visual">
+      <img src="../img/bicycle1.jpg" alt="" />
+    </div>
     <section id="news">
       <h1 class="section-h1">NEWS</h1>
       <p class="section-title-p">ニュース</p>
       <div class="news-list">
         <ul class="news-ul">
-          <li>2021.01.01</li>
+          <li>
+            <div class="date-area">
+              <time datetime="2021-01-01">2021.01.01</time>
+            </div>
+          </li>
           <li>NEWS</li>
           <li>タイトルタイトルタイトル</li>
         </ul>
         <ul class="news-ul">
-          <li>2021.01.01</li>
+          <li>
+            <div class="date-area">
+              <time datetime="2021-01-01">2021.01.01</time>
+            </div>
+          </li>
           <li>NEWS</li>
           <li>タイトルタイトルタイトル</li>
         </ul>
         <ul class="news-ul">
-          <li>2021.01.01</li>
+          <li>
+            <div class="date-area">
+              <time datetime="2021-01-01">2021.01.01</time>
+            </div>
+          </li>
           <li>NEWS</li>
           <li>タイトルタイトルタイトル</li>
         </ul>
@@ -63,28 +77,28 @@
         </p>
       </div>
     </section>
-    <section id="business">
-      <h1>BUSINESS</h1>
+    <section id="business" class="wrapper">
+      <h1 class="section-h1">BUSINESS</h1>
       <p class="section-title-p">事業内容</p>
       <div class="flex">
         <div class="left">
           <div class="item">
             <p>Web制作・マーケティング</p>
-            <div class="left-item1-img"></div>
+            <img src="../img/bicycle1.jpg" alt="" />
           </div>
           <div class="item">
             <p>インターネットメディア事業</p>
-            <div class="left-item2-img"></div>
+            <img src="../img/bicycle1.jpg" alt="" />
           </div>
         </div>
         <div class="right">
           <div class="item">
             <p>プロモーション企画・制作</p>
-            <div class="right-item1-img"></div>
+            <img src="../img/bicycle1.jpg" alt="" />
           </div>
           <div class="item">
             <p>ソーシャル企画・運営</p>
-            <div class="right-item2-img"></div>
+            <img src="../img/bicycle1.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -93,7 +107,7 @@
       <div id="company-text">
         <h1>COMPANY</h1>
         <p class="section-title-p">会社概要</p>
-        <dl class="dl-inline">
+        <dl>
           <dt>会社名</dt>
           <dd>ウェブエンターテイメントデザイン株式会社</dd>
           <dt>所在地</dt>
@@ -106,25 +120,32 @@
           <dd>3,000,000円</dd>
           <dt>事業内容</dt>
           <dd>Web制作・マーケティング</dd>
-          <dd>インターネットメディア事業</dd>
-          <dd>プロモーション企画・制作</dd>
-          <dd>ソーシャル企画・運営</dd>
+          <dd class="add">インターネットメディア事業</dd>
+          <dd class="add">プロモーション企画・制作</dd>
+          <dd class="add">ソーシャル企画・運営</dd>
         </dl>
       </div>
-      <div id="company-img"></div>
+      <div class="img">
+        <img src="../img/bicycle2.jpg" alt="" />
+      </div>
     </section>
-    <footer>
-      <div class="footer-div">
-        <div class="footer-flex">
-          <div>
+    <footer id="footer">
+      <div class="wrapper">
+        <div class="flex">
+          <div class="logo">
             <h1>WED</h1>
           </div>
-          <div class="footer-text">
-            Web Entertainment Design Inc.<br />West Building 3F<br />9-99
-            Sakuragaokacho Shibuya-ku<br />Tokyo, Japan 150-0031<br />T/99-9999-9999
+          <div class="info">
+            <p>
+              Web Entertainment Design Inc.<br />
+              West Building 3F<br />
+              9-99 Sakuragaokacho Shibuya-ku<br />
+              Tokyo, Japan 150-0031
+            </p>
+            <p>T/99-9999-9999</p>
           </div>
         </div>
-        <p>© Web Entertainment Design Inc.</p>
+        <p class="copyright">&copy; Web Entertainment Design Inc.</p>
       </div>
     </footer>
   </body>
