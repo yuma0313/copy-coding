@@ -364,7 +364,7 @@ img {
 }
 
 #summary {
-  background: url(../img/summary-bg.gif) repeat;
+  background: url(img/summary-bg.gif) repeat;
   background-repeat: repeat;
   animation: moveBackground 10s linear infinite;
   padding: 60px 0;
