@@ -29,11 +29,12 @@ header {
 
 .bar {
   margin: 0 auto;
-  background-color: black;
   height: 2px;
   width: 60%;
   border-radius: 10px;
   transition: all 0.3s;
+  background-color: black;
+  z-index: 100;
 }
 
 /* 新規追加 */
@@ -43,14 +44,14 @@ header {
   justify-content: space-evenly;
   width: 50px;
   height: 50px;
-  z-index: 999;
+  z-index: 100;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .hamburger-menu.open {
   color: white; /* ハンバーガーメニューを開いたときに背景色を赤に保つ */
-  z-index: 1000; /* ハンバーガーメニューをnav-menuの上に表示するためのz-index */
+  z-index: 100; /* ハンバーガーメニューをnav-menuの上に表示するためのz-index */
 }
 
 .hamburger-menu.open .bar:nth-child(1) {
@@ -72,8 +73,8 @@ header {
   width: 30%;
   height: 100vh;
   background-color: black;
-  z-index: 20;
   transition: transform 0.6s ease;
+  z-index: 100;
 }
 
 .nav-menu ul {
@@ -87,9 +88,19 @@ header {
   color: #fff;
 }
 
-.nav-menu ul li,
-p {
+.nav-menu li {
+  width: 80%;
+  text-align: start;
+  border-bottom: 1px solid #fff;
+  padding: 20px 0;
+}
+.nav-menu li:first-child {
+  border-top: 1px solid #fff;
+}
+
+.nav-menu p {
   color: #fff;
+  margin: 32px 48px;
 }
 
 .nav-menu.open {
@@ -115,17 +126,107 @@ p {
 }
 
 #video {
-  position: absolute;
-  top: 88px; /* ヘッダーの高さを考慮 */
-  left: 0;
   width: 100%;
   height: calc(100% - 88px); /* ヘッダーの高さを引いた値を設定 */
   overflow: hidden;
 }
 
 video {
-  min-width: 100%;
-  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
-  position: absolute;
+}
+
+#pickup {
+  padding: 100px 0 50px 0;
+}
+
+.section-title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.carousel {
+  list-style-type: none;
+  margin: 0 16px;
+  padding: 0;
+}
+
+.carousel li {
+  width: 350px;
+}
+
+.carousel img {
+  width: 300px;
+}
+
+#feature {
+  padding: 8%;
+}
+
+#feature .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px; /* グリッドアイテム間のスペース */
+}
+
+#feature .grid .item {
+  padding: 20px; /* グリッドアイテム内のパディング */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+#feature .grid .item img {
+  max-width: 100%;
+}
+
+#feature .grid .item .card-body .category {
+  margin-top: 8px;
+}
+#feature .grid .item .card-body .text {
+  font-weight: bold;
+}
+#feature .grid .item .card-body .date {
+  text-align: end;
+}
+
+#contact {
+  background-color: black;
+  color: #fff;
+  padding: 3% 8%;
+}
+
+#contact .section-title {
+  color: #fff;
+}
+
+.contact-container {
+  display: flex;
+}
+
+.contact-info {
+  width: 50%;
+  margin-right: 5%;
+}
+
+.contact-form {
+  width: 50%;
+}
+.custom-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.contact-form dt {
+  margin-bottom: 8px;
+}
+.contact-form dd {
+  margin-inline-start: 0;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #000000;
+  color: #fff;
 }
