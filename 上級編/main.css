@@ -158,6 +158,8 @@ video {
 
 .carousel img {
   width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #feature {
@@ -229,4 +231,37 @@ footer {
   text-align: center;
   background-color: #000000;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  #pickup {
+    padding: 50px 0 50px 0;
+  }
+
+  /* .carousel img {
+    width: 300px;
+    margin-left: 8px;
+  } */
+
+  #feature .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin-right: 0;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .custom-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
 }

@@ -11,25 +11,16 @@ function toggleMenu() {
 
 $(document).ready(function () {
   $(".carousel").slick({
+    arrows: false,
+    centerMode: true,
+    centerPadding: "100px",
     slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: true,
-    dots: false,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
+          centerPadding: "30px",
           slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
